@@ -1,0 +1,18 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1794379400.215690   53978 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+/home/seeed/Desktop/eye_search/.venv/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+W rknn-toolkit-lite2 version: 2.3.2
+W Query dynamic range failed. Ret code: RKNN_ERR_MODEL_INVALID. (If it is a static shape RKNN model, please ignore the above warning message.)
+eye ROI      : left (411, 151, 488, 197)  right (325, 152, 401, 198)
+left  eye    : pitch -11.41 deg  yaw +0.26 deg
+right eye    : pitch -11.90 deg  yaw +0.26 deg
+averaged     : pitch -11.65 deg  yaw +0.26 deg
+eye agreement: 0.00 deg (|yaw_left - yaw_right|)
+Saved annotated image: /home/seeed/Desktop/eye_search/output/tests/gaze_image.png
+I RKNN: [14:43:21.264] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+I RKNN: [14:43:21.264] RKNN Driver Information, version: 0.9.8
+I RKNN: [14:43:21.265] RKNN Model Information, version: 6, toolkit version: 2.3.2(compiler version: 2.3.2 (@2025-04-03T08:26:16)), target: RKNPU f2, target platform: rk3576, framework name: ONNX, framework layout: NCHW, model inference type: static_shape
+I RKNN: [14:43:21.290] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+W RKNN: [14:43:21.311] query RKNN_QUERY_INPUT_DYNAMIC_RANGE error, rknn model is static shape type, please export rknn with dynamic_shapes

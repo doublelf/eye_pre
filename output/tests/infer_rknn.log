@@ -1,0 +1,12 @@
+W rknn-toolkit-lite2 version: 2.3.2
+W Query dynamic range failed. Ret code: RKNN_ERR_MODEL_INVALID. (If it is a static shape RKNN model, please ignore the above warning message.)
+Backend: RK3576 NPU (/home/seeed/Desktop/eye_search/assets/eyegaze_rk3576.rknn)
+gaze pitch: 0.0475 rad (2.72 deg)
+gaze yaw  : 0.0488 rad (2.80 deg)
+gaze angle: 45.77 deg (atan2(yaw, pitch))
+Saved annotated image: /home/seeed/Desktop/eye_search/output/tests/gaze_result.png
+I RKNN: [14:43:17.136] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+I RKNN: [14:43:17.136] RKNN Driver Information, version: 0.9.8
+I RKNN: [14:43:17.137] RKNN Model Information, version: 6, toolkit version: 2.3.2(compiler version: 2.3.2 (@2025-04-03T08:26:16)), target: RKNPU f2, target platform: rk3576, framework name: ONNX, framework layout: NCHW, model inference type: static_shape
+I RKNN: [14:43:17.167] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+W RKNN: [14:43:17.194] query RKNN_QUERY_INPUT_DYNAMIC_RANGE error, rknn model is static shape type, please export rknn with dynamic_shapes

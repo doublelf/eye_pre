@@ -1,0 +1,25 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1794379404.615012   54069 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W rknn-toolkit-lite2 version: 2.3.2
+W Query dynamic range failed. Ret code: RKNN_ERR_MODEL_INVALID. (If it is a static shape RKNN model, please ignore the above warning message.)
+/home/seeed/Desktop/eye_search/.venv/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Video : /home/seeed/Desktop/eye_search/assets/videos/head-pose-face-detection-female.mp4  768x432 @ 12.00 fps  (1615 frames)
+Backend: RK3576 NPU | stride=1 | eye=both | expand=2.2
+
+Output video : /home/seeed/Desktop/eye_search/output/tests/gaze_video.mp4
+Output CSV   : /home/seeed/Desktop/eye_search/output/tests/gaze.csv
+Frames read  : 21  processed: 20  face detected: 20 (100.0%)
+Processing   : 139.2 ms/frame (7.2 fps), video fps 12.0
+  face detect: 74.6 ms/frame
+  gaze infer : 55.4 ms/frame (both eyes)
+Eye ROI size : 48 px mean (model trained on ~80px crops; < 40 px = low confidence)
+Two-eye check: |yaw_left - yaw_right| mean 19.4 deg, median 17.6 deg  (lower = more reliable)
+Pitch (deg)  : mean +7.14  std 3.57  range [-0.90, +14.02]   [high-res frames only, n=13]
+Yaw   (deg)  : mean -3.67  std 2.88  range [-8.86, +0.97]
+I RKNN: [14:43:25.428] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+I RKNN: [14:43:25.428] RKNN Driver Information, version: 0.9.8
+I RKNN: [14:43:25.428] RKNN Model Information, version: 6, toolkit version: 2.3.2(compiler version: 2.3.2 (@2025-04-03T08:26:16)), target: RKNPU f2, target platform: rk3576, framework name: ONNX, framework layout: NCHW, model inference type: static_shape
+I RKNN: [14:43:25.463] RKNN Runtime Information, librknnrt version: 2.3.2 (429f97ae6b@2025-04-09T09:09:27)
+W RKNN: [14:43:25.490] query RKNN_QUERY_INPUT_DYNAMIC_RANGE error, rknn model is static shape type, please export rknn with dynamic_shapes

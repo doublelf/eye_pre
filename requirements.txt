@@ -1,0 +1,26 @@
+# Runtime dependencies for the eye_search RK3576 NPU project.
+#
+#   python3 -m venv --system-site-packages .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# On this board PyPI is only reachable through a mirror, e.g.
+#   .venv/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+
+numpy
+opencv-python
+pillow
+mediapipe
+
+# Rockchip NPU runtime (RK3576).  Already present in ~/.local on this board.
+rknn-toolkit-lite2==2.3.2
+
+# ---------------------------------------------------------------------------
+# Optional - development only:
+#
+# onnxruntime / onnx are needed by
+#   * python -m split_model --verify      (model surgery self check)
+#   * python -m rknn_backend.verify        (NPU vs reference accuracy check)
+# Both skip gracefully when they are missing.
+#
+# The RKNN *converter* needs a separate environment with pinned older
+# versions - see README.md.

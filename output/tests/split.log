@@ -1,0 +1,13 @@
+[0;93m2026-11-11 14:43:09.872972875 [W:onnxruntime:, graph.cc:4454 CleanUnusedInitializersAndNodeArgs] Removing initializer '/Constant_output_0'. It is not used by any node and should be removed from the model.[m
+backbone : /home/seeed/Desktop/eye_search/assets/eyegaze_backbone.onnx
+  nodes  : 665 / 723
+  inputs : image (batch, 1, 96, 160) float32
+  outputs: heatmaps (batch, 34, 48, 80), gaze_feat (batch, 7680)
+head     : /home/seeed/Desktop/eye_search/assets/eyegaze_head.npz
+  fc1    : (256, 7748)  fc2: (2, 256)
+sample    : /home/seeed/Desktop/eye_search/assets/input_image.png
+heatmaps  : max abs diff 0.000e+00
+landmarks : max abs diff 2.632e-04
+gaze      : max abs diff 1.583e-07
+  reference gaze (rad): [0.01343778 0.05293317]
+  split     gaze (rad): [0.01343794 0.05293312]
